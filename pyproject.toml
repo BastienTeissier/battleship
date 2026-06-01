@@ -1,0 +1,47 @@
+[project]
+name = "battleship"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6,<7",
+    "django-eventstream>=5.3.4",
+    "django-vite>=3.1.0",
+    "psycopg[binary]>=3.3.4",
+    "whitenoise>=6.12.0",
+]
+
+[dependency-groups]
+dev = [
+    "django-stubs>=6.0.5",
+    "hypothesis>=6.155.1",
+    "model-bakery>=1.23.4",
+    "pre-commit>=4.6.0",
+    "pyright>=1.1.410",
+    "pytest>=9.0.3",
+    "pytest-asyncio>=1.4.0",
+    "pytest-django>=4.12.0",
+    "ruff>=0.15.15",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pyright]
+pythonVersion = "3.14"
+typeCheckingMode = "standard"
+
+[[tool.pyright.executionEnvironments]]
+root = "domain"
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.dev"
+python_files = "test_*.py"
+testpaths = ["tests"]
+asyncio_mode = "auto"
