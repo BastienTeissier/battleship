@@ -20,3 +20,8 @@ The aimed stack is as follows:
 5. Develop the frontend using HTMX and Alpine.js to create an interactive user interface.
 6. Implement CI/CD pipelines using GitHub Actions for automated testing and deployment.
 7. Test the application thoroughly to ensure it meets the specified requirements and is free of bugs.
+
+## Missing
+- Architecture document
+- CLAUDE.md
+- Makefile
