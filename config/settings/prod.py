@@ -9,6 +9,7 @@ ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(",")
 DJANGO_VITE = {
     "default": {
         "dev_mode": False,
-        "manifest_path": STATIC_ROOT / ".vite" / "manifest.json",  # noqa: F405
+        "static_url_prefix": "dist",
+        "manifest_path": STATIC_ROOT / "dist" / "manifest.json",  # noqa: F405
     }
 }
