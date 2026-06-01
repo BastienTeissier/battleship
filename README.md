@@ -22,6 +22,6 @@ The aimed stack is as follows:
 7. Test the application thoroughly to ensure it meets the specified requirements and is free of bugs.
 
 ## Missing
-- Architecture document
-- CLAUDE.md
-- Makefile
+- ~~Architecture document~~ (see `docs/architecture.md`)
+- ~~CLAUDE.md~~
+- ~~Makefile~~
