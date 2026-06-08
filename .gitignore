@@ -1,1 +1,18 @@
 .claude
+node_modules/
+static/dist/
+staticfiles/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+
+# Env / local
+.env
+*.sqlite3
